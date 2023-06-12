@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneCajero" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: lime;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.visual.mySQL.Controller.ViewProcesoDeVentasController">
+   <children>
+      <Button fx:id="botonOk" layoutX="325.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#botonOkOnMouseClicked" prefHeight="26.0" prefWidth="40.0" text="OK" />
+      <TextField fx:id="textFieldObtenerUnidades" layoutX="255.0" layoutY="30.0" prefHeight="26.0" prefWidth="70.0" promptText="Unidades" />
+      <TextField fx:id="textFieldObtenerId" layoutX="25.0" layoutY="30.0" prefHeight="26.0" prefWidth="230.0" promptText="ID del Producto" />
+      <Label fx:id="labelTotal" layoutX="25.0" layoutY="321.0" text="Total: $0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="botonTerminar" layoutX="25.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#botonTerminarOnMouseClicked" text="Terminar Venta" />
+      <Button fx:id="botonCancelar" layoutX="123.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#botonCancelarOnMouseClicked" text="Cancelar Venta" />
+      <Button fx:id="botonSalir" layoutX="267.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#botonSalirOnMouseClicked" text="Terminar Turno" />
+      <Label fx:id="labelCambio" layoutX="25.0" layoutY="349.0" text="Cambio: $0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldIngreso" layoutX="229.0" layoutY="350.0" prefHeight="26.0" prefWidth="96.0" promptText="\$ Ingreso" />
+      <Button fx:id="botonOKIngreso" layoutX="325.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#botonOKIngresoOnMouseClicked" prefHeight="26.0" prefWidth="40.0" text="OK" />
+      <Button fx:id="botonSiguiente" layoutX="266.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#botonSiguienteOnMouseClicked" text="Siguiente Venta" />
+      <ComboBox fx:id="listaDeProductos" layoutX="25.0" layoutY="73.0" prefHeight="26.0" prefWidth="340.0" promptText="Productos en Inventario" />
+      <ComboBox fx:id="listaDeVentas" layoutX="25.0" layoutY="117.0" prefHeight="26.0" prefWidth="340.0" promptText="Registro de Ventas" />
+   </children>
+</AnchorPane>
